@@ -40,7 +40,8 @@ $(document).ready(function() {
     $(".toggle").on("click", function(){
       if($(".navbar__items").hasClass("active")){
         $(".navbar__items").removeClass("active");
-        $(".navbar__items__background").removeClass("active")
+        $(".navbar__menu").css("background", "transparent");
+
       }
       else{
         $(".navbar__items").addClass("active");
