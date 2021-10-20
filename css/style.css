@@ -88,6 +88,11 @@ img{
 }
 
 /*========= Navbar ===========*/
+.bx-menu{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
 .navbar__brand > img{
     width: 90px;
 }
@@ -111,7 +116,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     z-index: var(--z-fixed);
 }
 
@@ -149,8 +154,12 @@ img{
     display: none;
 }
 
-.navbar__links .active{
+.navbar__items.active{
     display: block;
+}
+
+.navbar__items__background.active{
+    background: #FFFFFF;
 }
 
 .navbar__contacts.active{
@@ -669,6 +678,39 @@ img{
     max-width: 450px;
 }
 
+/* ================ History =========== */
+.history__container{
+    min-height: 100vh;
+    background: linear-gradient(rgba(8, 10, 18, 0.8),rgba(8, 10, 18, 0.8)), url(../images/banner.png);
+    display: flex;
+    padding: 2rem 5rem 2rem 2rem;
+}
+
+.history__one{
+    flex: 1;
+    margin-right: var(--mb-5);
+}
+
+.history__one > h1{
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.history__desc > p{
+    color: var(--kLightGrey);
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.history__desc{
+    margin-top: var(--mb-3);
+    margin-bottom: var(--mb-3);
+}
+
+
+.history__two{
+    flex: 1
+}
 
 /* ============== Objective ============ */
 .obj__container{
@@ -2353,5 +2395,37 @@ img{
     
     .event__month > h2{
         line-height:30px ;
+    }
+
+    /* ========== About page ========= */
+    .about__wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 0;
+        padding: 1.5rem 1.5rem;
+    }
+
+    .about__subtitle{
+        max-width: 100%;
+    }
+
+    .about__image{
+        flex: 5;
+        padding: 4.5rem 0 0 0;
+    }
+
+    /* ============ HISTORY ============ */
+    .history__container{
+        min-height: 100vh;
+        background: var(--black);
+        flex-direction: column;
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+
+    .history__one{
+        margin-right:unset;
+    }
+    .location{
+        display: none;
     }
 }

@@ -38,11 +38,13 @@ $(document).ready(function() {
     });
 
     $(".toggle").on("click", function(){
-      if($(".navbar__links").hasClass("active")){
-        $(".navbar__links").removeClass("active")
+      if($(".navbar__items").hasClass("active")){
+        $(".navbar__items").removeClass("active");
+        $(".navbar__items__background").removeClass("active")
       }
       else{
-        $(".navbar__links").addClass("active");
+        $(".navbar__items").addClass("active");
+        $(".navbar__menu").css("background", "#080A12");
       }
     })
   });
