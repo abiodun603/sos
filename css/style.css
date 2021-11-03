@@ -861,9 +861,11 @@ img{
     color: rgba(0, 0, 0, 0.6);
 }
 
-.news__wrapper{
+.tabContent{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin: var(--mb-5) auto;
 }
@@ -1574,6 +1576,15 @@ img{
     flex: 70%;
     display: flex;
     justify-content: flex-end;
+}
+
+.late__button .active{
+    background: var(--kDeepGreen);
+    padding: .5rem 1.5rem;
+    text-transform: capitalize;
+    color: var(--white);
+    font-size: 14px;
+    border-radius: 6px;
 }
 
 .late__button > button{
@@ -2327,10 +2338,17 @@ img{
         justify-content: unset;
         padding: 1.5rem 1.5rem;
         margin-top: var(--mb-5);
+        flex-direction: column;
     }
 
     .late__button{
-        display: none;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: var(--mb-3);
+    }
+
+    .late__button > button{
+        margin: var(--mb-1);
     }
 
     /* === Event Page ====== */
