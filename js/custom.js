@@ -65,3 +65,16 @@ function showpanel (panelIndex){
         $(ArrayContent[panelIndex]).css('display','flex');      
 }
 showpanel(0);  
+
+/*=================== SWIPER ================= */
+var swiper = new Swiper(".mySwiper", {
+  autoplay: {
+      delay: 5000,
+  },
+  // spaceBetween: 2,
+  direction: "vertical",
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+});

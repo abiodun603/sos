@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/lightslider.min.css">
-    <link rel="stylesheet" href="lightbox/dist/css/lightbox.min.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <div class="navbar__menu">
@@ -35,12 +34,27 @@
     
     <!-- ======= Banner ============= -->
     <div class="banner__container active__banner__container">
-        <div class="banner__wrapper">
+        <div class="banner__wrapper" style=" max-width: 800px; width: 500px;">
             <div>
-                <h1>Welcome to SOS</h1>
-                <button class="btn btn-green">Take a Tour</button>
+                <h1 style="margin-left: 3rem;">Welcome to SOS</h1>
+            </div>
+            <div style="position: relative;  width: 100%;">
+                <div class="swiper mySwiper" style="position: relative;">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper" style="position: relative;">
+                      <div class="swiper-slide">The School of Science,<br> Ile-Ife offers vibrant and <br>holistic educational <br>experience</div>
+                      <div class="swiper-slide">The School of Science,<br> Ile-Ife offers vibrant and <br>holistic educational <br>experience</div>
+                      <div class="swiper-slide">The School of Science,<br> Ile-Ife offers vibrant and <br>holistic educational <br>experience</div>
+                      <div class="swiper-slide">The School of Science,<br> Ile-Ife offers vibrant and <br>holistic educational <br>experience</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-green" style="margin-left: 3rem; margin-top: 1rem;">Take a Tour</button>
             </div>
         </div>
+        
+        
 
         <div class="banner__child">
             <div class="child__container">
@@ -349,6 +363,7 @@
     </div>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/custom.js"> </script>
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 </body>

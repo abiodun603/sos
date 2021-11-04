@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100% !important;
+          height: 100% !important;
+        }
+  
+        .swiper-slide {
+          /* text-align: center; */
+          font-size: 18px;
+          background: white;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        /* .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        } */
+
+        .swiper-pagination-bullets {
+            left: 0;
+        }
+        .swiper-pagination-bullet-active{
+            background: #1C6335 !important;
+            width: 12px;
+            height: 12px;
+        }
+
+        .swiper-pagination-bullet{
+            margin-top: 1px !important;
+        }
+
+        .swiper-pagination {
+            width: 16px;
+        }
+      </style>
+</head>
+<body>
+    <div class="navbar__menu">
+        <div class="navbar__brand">
+            <a href="#" class="navbar__brand" style="color: white">
+                <img src="images/logo/logo.png" class="navbar__brand__image" alt="logo">
+            </a>
+        </div>
+        <ul class="navbar__items">
+            <li class="navbar__links"><a href="#">About</a></li>
+            <li class="navbar__links"><a href="#">Admission</a></li>
+            <li class="navbar__links"><a href="#">Facilities</a></li>
+            <li class="navbar__links"><a href="#">Campus</a></li>
+            <li class="navbar__links"><a href="#">Schools</a></li>
+            <li class="navbar__links"><a href="#">Events</a></li>
+        </ul>
+        <div class="navbar__contacts">
+            <p>+234 988 73773</p>
+        </div>
+        <div class="toggle" >
+            <i class="bx bx-menu"></i>
+        </div>
+    </div>   
+    <div class="banner__container">
+        <div class="banner__center">
+            <h1>Lastest News</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">The School of Science,<br> Ile-Ife offers vibrant and <br>holistic educational <br>experience</div>
+                  <div class="swiper-slide">The School of Science,<br> Ile-Ife offers vibrant and <br>holistic educational <br>experience</div>
+                  <div class="swiper-slide">The School of Science,<br> Ile-Ife offers vibrant and <br>holistic educational <br>experience</div>
+                  <div class="swiper-slide">The School of Science,<br> Ile-Ife offers vibrant and <br>holistic educational <br>experience</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    <!-- ============= Subscribe =============== -->
+    <!-- ===========  Footer ================= -->
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 5000,
+            },
+            // spaceBetween: 2,
+            direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
